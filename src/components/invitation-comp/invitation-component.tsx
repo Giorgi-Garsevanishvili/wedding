@@ -5,7 +5,7 @@ function InvitationComponent() {
   return (
     <section className="invitation">
       <div className="img-box">
-        <img className="couple-img" src={coupleImg} alt="couple" />
+        <img className="couple-img img-zoom" src={coupleImg} alt="couple" />
       </div>
       <div className="general">
         <div className="intro">
