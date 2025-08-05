@@ -28,6 +28,7 @@
 
 .general {
   width: 92%;
+  margin-bottom: 1rem;
   padding: 0.5rem;
   padding-top: 3rem;
   border-radius: 3rem;
@@ -98,22 +99,33 @@
   }
 }
 
+.map-frame,
 .map {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  flex-direction: column;
+  text-align: center;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: ease-in-out 0.2s;
 }
 
+.form-inp,
 .map-frame {
   border: 2px solid goldenrod;
-  height: 20rem;
-  width: 90%;
-  padding: 0.5rem;
   border-radius: 3rem;
-  margin: 1rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.map-frame.open,
+.map.open,
+.form-inp.open,
+.form.open {
+  height: 35rem; /* big enough to contain content (or use calc) */
+  width: 80vw;
+  opacity: 1;
+  transition: ease-in-out 0.2s;
 }
 
 .form-inp,
@@ -123,8 +135,10 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  width: 90%;
-  height: 35rem;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: ease-in-out 0.2s;
 }
 
 .img-zoom {
@@ -139,28 +153,28 @@
   }
 }
 
-.form-inp {
-  border: 2px solid goldenrod;
-  padding: 0.5rem;
+.toggle-btn {
+  margin: 0.3rem;
+  width: 80vw;
+  height: 4rem;
+  font-size: 1rem;
   border-radius: 3rem;
-  margin: 1rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  opacity: 1;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(3, 64, 42);
+  transition: ease-in-out 0.3s;
+}
+
+.toggle-btn:hover {
+  opacity: 0.8;
+  transition: ease-in-out 0.3s;
 }
 
 @media (max-width: 600px) {
   .and {
     font-size: 3.2rem;
-  }
-
-  .form,
-  .form-inp {
-    width: 95%;
-    height: 40rem;
-  }
-
-  .map-frame {
-    height: 10rem;
   }
 
   .intro {
