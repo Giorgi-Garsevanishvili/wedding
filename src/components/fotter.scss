@@ -11,7 +11,13 @@
 
 .branding-container {
   text-align: center;
-  margin-top: 2rem;
+  margin: 1rem 0;
+  padding:0 3rem;
+  padding-top: 0.5rem;
+  border-radius: 1rem;
+  background-color: #ffffffae;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.089) 1px, transparent 0);
+  background-size: 11px 11px;
 }
 
 .brand-name {
