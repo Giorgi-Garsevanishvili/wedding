@@ -1,0 +1,111 @@
+.invitation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(3, 48, 33);
+  position: relative;
+  width: 100vw;
+  overflow: auto;
+  z-index: 10000000000;
+  border-radius: 4rem;
+  margin: 3rem;
+  box-shadow: rgba(255, 255, 255, 0.343) 0px 50px 100px -20px,
+    rgba(255, 255, 255, 0.3) 0px 30px 60px -30px;
+  background-color: rgba(121, 129, 127, 0.274);
+  border: 1px solid rgba(0, 0, 0, 0.034);
+  transition: 0.2s;
+}
+
+.intro,
+.details,
+.names {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.general {
+  width: 80%;
+  padding: 3rem;
+  border-radius: 3rem;
+  background-color: rgba(239, 243, 247, 0.47);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.names {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.6rem;
+  margin: 0;
+}
+
+.names {
+  h2 {
+    text-align: center;
+  }
+}
+
+.intro {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  text-align: center;
+  margin: 0;
+}
+
+.arab {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  color: goldenrod;
+  margin: 0;
+}
+.and {
+  font-size: 5rem;
+  color: goldenrod;
+  margin: 0;
+}
+
+.img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.couple-img {
+  width: 60%;
+  background-color: transparent;
+}
+
+.details {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-top-left-radius: 2px;
+}
+
+.details {
+  h3 {
+    margin: 0.5rem;
+  }
+}
+
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.map-frame {
+  border: 2px solid goldenrod;
+  height: 20rem;
+  width: 90%;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  margin: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}

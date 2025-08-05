@@ -1,0 +1,40 @@
+main {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 2rem;
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.frame-l-img,
+.frame-r-img {
+  transform: rotate(60deg); /* or -90deg depending on direction */
+  width: 70rem;
+}
+
+.frame-right,
+.frame-left {
+  display: flex;
+  position: fixed;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.frame-left {
+  top: -20rem;
+  left: -25rem;
+}
+
+.frame-right {
+  bottom: -20rem;
+  right: -25rem;
+}
+
+@media (max-width: 1200px) {
+}
